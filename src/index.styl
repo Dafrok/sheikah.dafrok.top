@@ -1,0 +1,79 @@
+@font-face
+    font-family sheikah
+    src url('sheikah-complete.ttf')
+
+body
+    background #000
+    color #fff
+    background-image url('./bg.png')
+
+ruby
+    font-family sheikah
+    color #9ef
+    rt
+        font-family arial
+        user-select none
+.textbox
+    padding 10px
+    line-height 1.6
+    box-sizing border-box
+    padding-bottom 120px
+    &.translate
+        rt
+            display block
+    ruby
+        animation shine 3s infinite
+        rt
+            display none
+
+.input-panel
+    position fixed
+    bottom 0
+    left 0
+    right 0
+    height 120px
+    display flex
+    box-sizing border-box
+    background rgba(16, 45, 88, .9);
+    .text-container
+        flex 1
+        height 100%
+        border 5px solid transparent;
+        box-sizing border-box
+        position relative
+        overflow hidden
+    textarea
+        width 100%
+        padding 10px
+        position absolute
+        top 0
+        bottom 0
+        right 0
+        left 0
+        color #fff
+        border 0
+        outline 0
+        resize none
+        background transparent
+        overflow-y auto
+        background #000
+        background-image url('./bg.png')
+    .settings
+        padding 10px
+        user-select none
+        label
+            display block
+            margin-bottom: 10px
+            input[type=range]
+                width 100%
+        ruby
+            font-size 12px
+            color #fff
+
+@keyframes shine
+    0%
+        text-shadow 0 0 1px #fff
+    50%
+        text-shadow 0 0 3px #fff
+    100%
+        text-shadow 0 0 1px #fff
