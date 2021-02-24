@@ -56,7 +56,7 @@ ruby
         resize none
         background transparent
         overflow-y auto
-        background #000
+        background #191919
         background-image url('./bg.png')
     .settings
         padding 10px
@@ -77,3 +77,11 @@ ruby
         text-shadow 0 0 3px #fff
     100%
         text-shadow 0 0 1px #fff
+
+@media screen and (max-width: 640px)
+    .input-panel
+        height 240px
+        display block
+        .text-container
+            height 120px
+            flex auto
